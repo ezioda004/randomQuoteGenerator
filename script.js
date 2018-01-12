@@ -25,8 +25,6 @@ $(document).ready(function(){
 
     });
     $("#tweet").on("click", function(){
-        //var x = $("#quote").text();
-        //console.log(encodeURIComponent(x));
         window.open("https://twitter.com/intent/tweet?hashtags=quotes&" +"text=" + '"' + encodeURIComponent($("#quote").text()) + '"' + encodeURIComponent($("#author").text()) );
     });
     $("#share").on("click", function(){
